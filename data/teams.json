@@ -1,14 +1,14 @@
 [
     {
-    "group": "won3",
+    "promotions": "won3",
     "members": "Andrei Corpodean, Alex Radulescu",
     "name": "unknown",
     "url": "https://github.com/RadulescuAlex/team-networking"
     },
     {
-        "group": "won3",
+        "promotion": "won3",
         "members": "Paul Durcan",
         "name": "unknown2",
         "url": "https://github.com/RadulescuAlex/team-networking"
-        }
-]
+    }
+] 
