@@ -132,3 +132,16 @@ document.querySelector('#list tbody').addEventListener("click", e => {
     editTeam(id);
   }
 });
+
+document.getElementById("search").addEventListener("input", e => {
+    const text = e.target.value.toLowerCase();
+    console.warn('cauta..:', text);
+    const filtered = allTeams.filter(team => {
+      return team.members.toLowerCase().includes(text);
+    })
+    displayTeams(filtered);
+});
+
+
+
+
