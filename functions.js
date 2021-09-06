@@ -137,8 +137,10 @@ document.getElementById("search").addEventListener("input", e => {
     const text = e.target.value.toLowerCase();
     console.warn('cauta..:', text);
     const filtered = allTeams.filter(team => {
-      return team.members.toLowerCase().includes(text);
-    })
+      return team.members.toLowerCase().includes(text) ||
+        team.name.toLowerCase().includes(text) ||
+        team.promotion.toLowerCase().includes(text)
+    });
     displayTeams(filtered);
 });
 
